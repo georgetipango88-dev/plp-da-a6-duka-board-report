@@ -2,17 +2,22 @@
 
 ## Looker Studio publication status
 
-**The public Looker Studio report has not yet been published.** Google sign-in and report-sharing permissions are required to create and publish it; this workspace currently has no authenticated Google account. No report URL or Looker Studio screenshots are claimed here. Do not submit a placeholder URL as a live dashboard.
+**The dashboard is not complete or public yet.** A draft report has been created, but its Google Sheets data connector still needs authorization, and public link sharing and screenshots have not been verified. Do not submit the draft URL as a live dashboard.
 
-When signed in, create the dashboard from the included `duka_sales.csv` using the Looker Studio file upload connector (or import the CSV to Google Sheets first). Use `order_date` as the date dimension, `revenue = quantity * unit_price` as the sales-revenue metric, and `order_id` as the order count. Add the following:
+Google account sign-in is active. The supplied `duka_sales.csv` was uploaded to Google Drive and imported into a Google Sheet:
+
+- [Duka Electronics H1 2026 Sales Data](https://docs.google.com/spreadsheets/d/1p3-XyRAl-BKdG1U5V95uVZ5WOrnR8HCj9986LaHuiPI/edit)
+- [Draft Data Studio report](https://datastudio.google.com/reporting/8f8a6e6d-25ed-4e2a-b54f-00bbf8e24cfa/page/gl1CG/edit) (not connected or publicly shared)
+
+**Blocked on connector authorization:** Data Studio displays an **AUTHORISE** prompt for Google Sheets. Complete this authorization in the signed-in browser, connect the sheet, and then add:
 
 - Scorecards: H1 sales revenue, order count, and average order value.
 - Monthly time series: sales revenue by month.
 - Breakdown charts: sales revenue by branch and by product/channel.
 - Controls: date-range control and a drop-down control for branch or channel.
-- Share settings: **Anyone with the link can view**.
+- Sharing: **Anyone with the link can view**.
 
-After publication, replace the status above with the public Looker Studio URL and add at least two genuine report screenshots under `figures/`—one showing scorecards and monthly trend, and one showing breakdowns and both filter controls. Capture screenshots from the published report, not from a static mock-up.
+After publication, replace this status with the public viewer URL and add at least two genuine report screenshots under `figures/`—one showing scorecards and monthly trend, and one showing breakdowns and both filter controls. Capture screenshots from the published report, not from a static mock-up.
 
 ## Dashboard metric definitions
 
